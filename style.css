@@ -17,7 +17,12 @@ html{
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.container:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
 }
 .news{
     margin-bottom: 10px;
@@ -195,6 +200,11 @@ summary:hover{
     background-color: #dddcdc;
     cursor: pointer;
     transition: 0.1s;
+}
+
+details[open] summary {
+    border-left: 6px solid #25b8b8; /* Border khi nội dung mở */
+    background-color: #cfcfce;
 }
 
 .detail-content{
