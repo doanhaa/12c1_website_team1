@@ -10,11 +10,11 @@ html{
 }
 
 #class_image{
-    width: 70%;
+    width: 100%;
+    max-width: 520px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .container {
@@ -60,11 +60,11 @@ html{
     padding-right: 10px;
 }
 header {
-    background-image: url('image/desktop-wallpaper-windows-xp-original-windows-xp-meme-meme.jpg');
+    background-image: url('image/sh-bheekhun-mj4KYHG8DOU-unsplash.jpg');
     width: 60%;
     background-size: cover; 
     background-position: center;
-    color: white;
+    color: #1c6161;
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -78,25 +78,38 @@ main h2{
     text-align: center;
 }
 nav{
-    background-color: #bdbfc0;
-    padding: 2px 0;
-    text-align: center;            
+    background-color: #085757;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
 nav li{
-    display: inline-block;
-    margin: 5px;
+    margin: 0;
 }
+
 nav li a{
+    display: block;
+    padding: 10px 16px;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: 0.3s;
+    border-radius: 999px;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
+
 nav li a:hover{
-    background-color: #3dd4af;
-    padding: 10px;
-    color: #ffffff;
-    border-radius: 4px;
+    background-color: #08e6a7;
+    color: #0c2f2f;
+    transform: translateY(-1px);
 }
 
 h2{
@@ -112,6 +125,27 @@ main img{
     height: auto;
     display: block;
     margin: 20px auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text h2{
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    margin-top: 0;
+    text-align: justify;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
 }
 #input_profile input{
     width: 30%;
@@ -158,10 +192,15 @@ table, td{
     text-align: center;
     font-size: 120%;
 }
+
+table{
+    border-radius: 10px;
+    overflow: hidden;
+}
 #member_container{
     text-align: center;
     padding: 2%;
-    width: 50%;
+    width: 70%;
 
 }
 
