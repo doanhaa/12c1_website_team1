@@ -20,7 +20,7 @@ html{
 .container {
     margin: auto;
     margin-top: 20px;
-    width: 80%;
+    width: 70%;
     overflow: hidden;
     background-color: white;
     padding: 20px;
@@ -151,15 +151,25 @@ button:hover, #submit_button:hover{
 }
 
 
-table, td,th{ 
+table, td{ 
     border: 1px solid black;
     border-collapse: collapse;
     padding: 0.1px;
     text-align: center;
     font-size: 120%;
 }
+#member_container{
+    text-align: center;
+    padding: 2%;
+    width: 50%;
 
+}
 
+table th{
+    background-color: #004e4e;
+    color: white;
+    padding: 20px;
+}
 table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
